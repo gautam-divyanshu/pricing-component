@@ -13,8 +13,6 @@ const Card = () => {
   const [prices, setPrices] = useState([8.0, 12.0, 16.0, 24.0, 36.0]);
   const [rangeValue, setRangeValue] = useState(3);
   const [isDiscount, setIsDiscount] = useState(false);
-  const color1 = "hsl(174, 77%, 80%)";
-  const color2 = "hsl(174, 86%, 45%)";
 
   const handleSliderChange = (event, newValue) => {
     setRangeValue(newValue);
@@ -33,12 +31,7 @@ const Card = () => {
           max={5}
           step={1}
           marks
-          sx={{
-            color: color1,
-            "& .MuiSlider-thumb:hover": {
-              backgroundColor: color2, // Change the thumb (circle) color here
-            },
-          }}
+ 
         />
 
         <h2>
@@ -64,8 +57,6 @@ const Card = () => {
           <span className="discount-big"> discount</span>
         </span>
       </div>
-
-      <div className="horizontal"></div>
 
       <div className="card-bottom">
         <ul>

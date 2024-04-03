@@ -1,7 +1,6 @@
 header {
   padding: 4rem 0;
   height: 231px;
-  background-image: url(./assets/images/pattern-circles.svg);
   background-repeat: no-repeat;
   background-position: 50%;
   text-align: center;
@@ -21,6 +20,15 @@ header p {
   margin-inline: auto;
   margin-bottom: 5rem;
   background-color: var(--white);
+  border-radius: 5px;
+}
+
+.dark-card-wrapper {
+  max-width: 550px;
+  padding-bottom: 2rem;
+  margin-inline: auto;
+  margin-bottom: 5rem;
+  background-color: black;
   border-radius: 5px;
   box-shadow: 12px 20px 25px 0px var(--neutral-light-grayish-blue-bar);
 }
